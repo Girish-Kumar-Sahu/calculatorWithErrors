@@ -103,14 +103,6 @@ function clearDisplay() {
     document.getElementById("display").value = "";
 }
 
-// ✅ Text-to-speech (SPEAK result)
-{% if result %}
-let msg = new SpeechSynthesisUtterance("{{ result }}");
-msg.pitch = 0.7;
-msg.rate = 0.8;
-msg.volume = 1;
-speechSynthesis.speak(msg);
-{% endif %}
 </script>
 
 </body>
